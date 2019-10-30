@@ -16,12 +16,7 @@ function loadCurrentGrades() {
     ajax: {
       url: "https://github.com/diamo12/gpa-tracker/blob/master/grades.txt",
       dataSrc: '',
-      type: "GET",
-      headers: {
-        "Accept": "application/json; odata=verbose",
-        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
-        "Cache-Control": "no-cache"
-      }
+      type: "GET"
     },
     columns: [
       { data: 'Class_Num' },
