@@ -14,9 +14,14 @@ function initListeners(){
 function loadCurrentGrades() {
   $('#GPA_Table').DataTable({
     ajax: {
-      url: "grades.txt",
+      url: "https://github.com/diamo12/gpa-tracker/blob/master/grades.txt",
       dataSrc: '',
-      type: "GET"
+      type: "GET",
+      headers: {
+        "Accept": "application/json; odata=verbose",
+        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+        "Cache-Control": "no-cache"
+      }
     },
     columns: [
       { data: 'Class_Num' },
