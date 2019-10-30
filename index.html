@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Load Styles: -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Load jQuery: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  </head>
+  <body>
+    <!-- Reference for QP: https://polytechnic.purdue.edu/undergraduate-studies/student-success/academic-standards -->
+    <div class="gpa-tracker-btn-container">
+      <button type="button" id="Add_Btn">Add</button> <button type="button" id="Del_Btn">Delete</button>
+    </div>
+    <div class="gpa-tracker-container" id="Main_Container">
+      <table id="GPA_Table" class="display">
+        <thead>
+          <tr>
+            <th>Class Number:</th>
+            <th>Class Name:</th>
+            <th>Class Grade (Percent):</th>
+            <th>Class Grade (Letter):</th>
+            <th>Class Credit Hours:</th>
+          </tr>
+        </thead>
+        <tbody id="Table_Body">
+
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
