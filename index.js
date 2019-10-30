@@ -41,17 +41,3 @@ function loadAddMenu() {
 function deleteEntry() {
 
 }
-
-function getGrades() {
-  var fileUrl = "grades.txt";
-
-  return $.ajax({
-    url: fileUrl,
-    method: "GET",
-    headers: {
-      "Accept": "application/json; odata=verbose",
-      "X-RequestDigest": $("#__REQUESTDIGEST").val(),
-      "Cache-Control": "no-cache"
-    },
-  });
-}
