@@ -14,7 +14,7 @@ function initListeners(){
 function loadCurrentGrades() {
   $('#GPA_Table').DataTable({
     ajax: {
-      url: "https://github.com/diamo12/gpa-tracker/grades.txt",
+      url: "https://github.com/diamo12/gpa-tracker/blob/master/grades.txt",
       dataSrc: '',
       type: "GET",
       headers: {
@@ -43,7 +43,7 @@ function deleteEntry() {
 }
 
 function getGrades() {
-  var fileUrl = "https://github.com/diamo12/gpa-tracker/grades.txt";
+  var fileUrl = "grades.txt";
 
   return $.ajax({
     url: fileUrl,
